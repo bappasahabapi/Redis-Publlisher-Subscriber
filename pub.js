@@ -29,15 +29,17 @@ app.get('/publish', async(req, res) => {
     // we want to publish this data
     const data={
         id, 
-        message:`Message from :${id} id`
+        message:`Message from id:${id}`
     };
+    console.log(data)
 
     //here data is published
     await publisherData.publish('PData:',JSON.stringify(data));
 
     //after publish we send a response
     res.send({
-        Message:"PData is successfully published"
+        Message:"PData is successfully published",
+        data
     })
       
 });

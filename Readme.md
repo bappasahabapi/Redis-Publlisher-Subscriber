@@ -8,6 +8,10 @@
 
 `http://localhost:3001/publish`
 
+## output
+
+![Output](./ps.png)
+
 
 
 #   Install Commands
